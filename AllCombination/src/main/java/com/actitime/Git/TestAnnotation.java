@@ -90,7 +90,7 @@ public void logout() throws InterruptedException
 public void close() throws IOException
 {
 	Reporter.log("Close",true);
-	driver.close();
+	//driver.close();
 	extent.flush();
 	Desktop.getDesktop().browse(new File("MyExtentReport.html").toURI());
 }
